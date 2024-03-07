@@ -4,6 +4,6 @@
   tasks:
     - name: create file
       copy:
-        src: "/home/hiroshi/sample.txt"
+        content: "abcedfg"
         dest: "/home/hiroshi/abc.txt"
 
