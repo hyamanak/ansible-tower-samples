@@ -1,13 +1,7 @@
 - name: Hello World Sample
-  hosts: all
+  hosts: localhost
   tasks:
     - name: create file
       copy:
         content: "abc"
-        dest: "/tmp/sample2copy.txt"
-
-      copy:
-        src: "/tmp/sample2copy.txt"
-        dest: "tmp/sample2copy_cp.txt"
-        
-
+        dest: "/tmp/sample2copy.txt
