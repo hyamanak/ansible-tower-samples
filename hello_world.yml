@@ -4,6 +4,6 @@
     - name: create file
       copy:
         content: "abcedfg"
-        dest: "/tmp/abc/abc.txt"
+        dest: "/tmp/hyc/abc.txt"
         mode: '0644'
 
