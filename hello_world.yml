@@ -1,10 +1,9 @@
 - name: Hello World Sample
   hosts: all
-  become: true
   tasks:
     - name: create file
       copy:
         content: "abcedfg"
-        dest: "/tmp/hiroshi/abc.txt"
+        dest: "/tmp/abc/abc.txt"
         mode: '0644'
 
