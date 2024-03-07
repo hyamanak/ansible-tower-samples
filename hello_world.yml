@@ -1,7 +1,9 @@
 - name: Hello World Sample
-  hosts: all
+  hosts: rh92-aap
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+    - name: copy file from
+      copy:
+        src: "/runner/sc-project/test_file.txt
+        dest: "/root/test_file.txt"
+        
 
