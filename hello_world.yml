@@ -1,8 +1,8 @@
 - name: Hello World Sample
-  hosts: rh92-aap
+  hosts: all
   tasks:
-    - name: create directory to ee
+    - name: create file
       copy:
-        content: "this is created by sample"
-        dest: /tmp/sample2.txt
+        src: "/home/hiroshi/sample.txt"
+        dest: "home/hiroshi/abc.txt"
 
