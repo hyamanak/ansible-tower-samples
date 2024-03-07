@@ -5,5 +5,5 @@
   tasks:
     - name: fetch that generated file
       copy:
-        src: "/tmp/abc/abc.txt"
+        content: "fetching"
         dest: "/tmp/abc/efg.txt"
