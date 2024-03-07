@@ -1,6 +1,6 @@
 ---
 - name: fetch the damn file
-  hosts: localost
+  hosts: localhost
   tasks:
     - name: fetch that generated file
       fetch:
