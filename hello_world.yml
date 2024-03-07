@@ -17,4 +17,4 @@
       register: getenforce_output
     - name: print to console
       debug:
-        msg: "{{ getenforce_output }}"
+        msg: "{{ getenforce_output.stdout }}"
