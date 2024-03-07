@@ -4,10 +4,10 @@
     - name: create file
       copy:
        content: "abc"
-       dest: "sample2copy.txt"
+       dest: "/opt/work/sample2copy.txt"
 
     - name: view the content to see if the file exists
-      command: ls /runner
+      command: ls /opt/work
       register: command_output
     - name: print to console
       debug:
