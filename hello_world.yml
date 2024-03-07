@@ -7,7 +7,7 @@
        dest: "sample2copy.txt"
 
     - name: view the content to see if the file exists
-      command: ls -al　/runner/project
+      command: ls　/runner/project/
       register: command_output
     - name: print to console
       debug:
