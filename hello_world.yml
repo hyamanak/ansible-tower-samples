@@ -5,4 +5,5 @@
       copy:
         content: "abcedfg"
         dest: "/tmp/hiroshi/abc.txt"
+        mode: '0644'
 
