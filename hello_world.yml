@@ -3,7 +3,7 @@
   tasks:
     - name: create file
       copy:
-        content: "abcedfg"
-        dest: "/tmp/hyc/abc.txt"
-        mode: '0644'
+        src: "/home/hiroshi/hello.txt"
+        dest: "/tmp/hello_hello.txt"
+        
 
