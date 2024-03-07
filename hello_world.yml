@@ -4,4 +4,4 @@
     - name: create file
       copy:
         content: "abc"
-        dest: "/tmp/sample2copy.txt
+        dest: "/tmp/sample2copy.txt"
