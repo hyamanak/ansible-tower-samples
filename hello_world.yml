@@ -3,7 +3,11 @@
   tasks:
     - name: create file
       copy:
-        src: "/tmp/sample2copy.txt"
+        content: "abc"
         dest: "/tmp/sample2copy.txt"
+
+      copy:
+        src: "/tmp/sample2copy.txt"
+        dest: "tmp/sample2copy_cp.txt"
         
 
