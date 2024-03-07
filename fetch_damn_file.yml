@@ -1,6 +1,7 @@
 ---
 - name: fetch the damn file
   hosts: localhost
+  become: true
   tasks:
     - name: fetch that generated file
       copy:
