@@ -6,10 +6,4 @@
         path: /tmp/hiroshi/bb
         state: directory
         mode: '0755'
-      
-    - name: copy file from
-      copy:
-        src: "/tmp/hiroshi/ee/sample-a.txt"
-        dest: "/tmp/hiroshi/bb/sample-a.txt"
-        
 
