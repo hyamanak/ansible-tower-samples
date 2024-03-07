@@ -5,4 +5,4 @@
     - name: fetch that generated file
       copy:
         src: "/tmp/abc/abc.txt"
-        dest: "/tmp/efg.txt"
+        dest: "/tmp/abc/efg.txt"
