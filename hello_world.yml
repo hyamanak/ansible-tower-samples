@@ -2,8 +2,7 @@
   hosts: rh92-aap
   tasks:
     - name: create directory to ee
-      file:
-        path: /tmp/hiroshi/bb
-        state: directory
-        mode: '0755'
+      copy:
+        content: "this is created by sample"
+        dest: /tmp/hiroshi/sample2.txt
 
