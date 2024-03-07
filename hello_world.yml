@@ -4,5 +4,5 @@
     - name: create directory to ee
       copy:
         content: "this is created by sample"
-        dest: /tmp/hiroshi/sample2.txt
+        dest: /tmp/sample2.txt
 
