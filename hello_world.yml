@@ -4,5 +4,5 @@
     - name: create file
       copy:
         content: "abcedfg"
-        dest: "/tmp/abc.txt"
+        dest: "/tmp/hiroshi/abc.txt"
 
