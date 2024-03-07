@@ -1,1 +1,8 @@
-
+---
+- name: fetch the damn file
+  hosts: localost
+  tasks:
+    - name: fetch that generated file
+      fetch:
+        src: "/tmp/abc/abc.txt"
+        dest: "/tmp/abc.txt"
