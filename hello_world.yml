@@ -3,7 +3,7 @@
   tasks:
     - name: copy file from
       copy:
-        src: "/runner/sc-project/test_file.txt
+        src: "/runner/sc-project/test_file.txt"
         dest: "/root/test_file.txt"
         
 
