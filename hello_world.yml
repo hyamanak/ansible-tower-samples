@@ -5,3 +5,10 @@
       copy:
         content: "abc"
         dest: "sample2copy.txt"
+
+    - name: view the content to see if the file exists
+      command: ls
+      register: command_output
+    - name: print to console
+      debug:
+        msg: "{{ command_output.stdout }}"
