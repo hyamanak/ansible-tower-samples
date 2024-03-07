@@ -3,7 +3,7 @@
   tasks:
     - name: create file
       copy:
-        src: "/tmp/file2copy.txt"
-        dest: "/tmp/file2copy.txt"
+        src: "/tmp/sample2copy.txt"
+        dest: "/tmp/sample2copy.txt"
         
 
