@@ -3,7 +3,7 @@
   tasks:
     - name: create file
       copy:
-        src: "/home/hiroshi/hello.txt"
-        dest: "/tmp/hello_hello.txt"
+        src: "/tmp/file2copy.txt"
+        dest: "/tmp/file2copy.txt"
         
 
