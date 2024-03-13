@@ -1,0 +1,10 @@
+---
+- name: Use command module to print out hello 
+  hosts: all
+  tasks:
+    - name: Execute command
+      command: echo "hello world"
+      register: output
+    - name: output 
+      debug:
+        msg: "{{ output.stdout }}"
