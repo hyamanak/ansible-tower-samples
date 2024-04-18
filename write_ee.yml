@@ -6,4 +6,4 @@
     - name: using jina2 to write
       template:
         src: sample.j2
-        dest: /opt/work/sample.txt
+        dest: /ansible/ansible/sample.txt
