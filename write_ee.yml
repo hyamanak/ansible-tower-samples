@@ -1,0 +1,7 @@
+---
+- name: test writing to ee using template
+  hosts: localhost
+  become: true
+    - name: using jina2 to write
+        src: sample.j2
+        dest: /ansible/data/report/
