@@ -4,5 +4,6 @@
   become: true
   tasks:
     - name: using jina2 to write
+      template:
         src: sample.j2
         dest: /ansible/data/report/
