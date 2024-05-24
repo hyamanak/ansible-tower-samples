@@ -3,4 +3,4 @@
   tasks:
     - name: データを表示1
       debug:
-        mgs: "{{ ansible_stats.my_var1 }}"
+        msg: "{{ ansible_stats.my_var1 }}"
