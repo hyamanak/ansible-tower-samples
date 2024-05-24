@@ -10,8 +10,5 @@
         data: 
           my_var1: "{{ my_var1 }}"
 
-    - name: 値を表示
-      debug:
-        msg: "{{ ansible_stats.my_var1 }}"
       
     
