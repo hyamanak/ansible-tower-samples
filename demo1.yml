@@ -4,11 +4,5 @@
     - name: データを生成
       set_fact:
         my_var1: "Data from my_var1"
-
-    - name: 値を保存
-      set_stats:
-        data: 
-          my_var1: "{{ my_var1 }}"
-
       
     
