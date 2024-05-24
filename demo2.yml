@@ -1,0 +1,10 @@
+- name: Playbook2 - データ読み込みと処理
+  hosts: localhost
+  tasks:
+    - name: データを表示1
+      debug:
+        msg: "My var 1 - {{ my_var1 }}"
+
+    - name: データを表示2
+      debug:
+        msg: "My var 2 - {{ my_var2 }}"
