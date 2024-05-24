@@ -1,0 +1,23 @@
+- name: Playbook1 - データ生成と保存
+  hosts: localhost
+  tasks: 
+    - name: データを生成1 fact
+      set_fact:
+        my_var1: "data from playbook1 set_fact, register"
+      register: fact_result #あってもなくても値が引き渡されない？
+
+    - name: データを生成2 fact
+      set_fact:
+        my_var2: "data from playbook1, job_instance.survey.my_var"
+  
+    - name: データを表示1（確認用1）
+      debug:
+        msg: "My var 1 - {{ fact_result.ansible_facts.my_var1 }}"
+
+    - name: データを表示1.1（確認用1）
+      debug:
+        msg: "My var 1.1 - {{ my_var1 }}"
+    
+    - name: データを表示2（確認用2）
+      debug:
+        msg: "My var 2 - {{ my_var2 }}"
