@@ -8,3 +8,7 @@
     - name: データを表示
       debug:
         msg: "{{ my_var1 }}"
+
+    - name: factsから表示
+      debug:
+        msg: "{{ ansible_stats.my_var1 }}"
