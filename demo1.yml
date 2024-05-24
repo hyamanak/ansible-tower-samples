@@ -3,6 +3,7 @@
   tasks: 
     - name: データを生成
       set_fact:
-        my_var1: "Data from my_var1"
+        data:
+          my_var1: "Data from my_var1"
       
     
