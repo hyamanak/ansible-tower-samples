@@ -1,0 +1,8 @@
+---
+- name: Gather Default NIC IP
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Print default IPv4 address
+      debug:
+        msg: "Default IPv4 address is {{ ansible_facts.default_ipv4.address }}"
