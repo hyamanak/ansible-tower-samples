@@ -1,0 +1,8 @@
+---
+- name: Gather Network Interfaces Facts
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Print network interfaces facts
+      debug:
+        var: ansible_facts['network_interfaces']
