@@ -1,6 +1,6 @@
 ---
 - name: expose test
-  host: localhost
+  hosts: localhost
   tasks:
     - name: expose
       command: cat /opt/sample.txt
