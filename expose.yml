@@ -3,10 +3,10 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: expose
-      shell: cat /opt/new.txt
-      register: file_content
+    - name: List contents of /opt
+      shell: ls -l /opt
+      register: dir_contents
 
-    - name: Print file content
+    - name: Print directory contents
       debug:
-        var: file_content.stdout
+        var: dir_contents.stdout
