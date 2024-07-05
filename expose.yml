@@ -1,0 +1,12 @@
+---
+- name: expose test
+  host: localhost
+  tasks:
+    - name: expose
+      command: cat /opt/sample.txt
+      register: file_content
+
+    - name: Print file content
+      debug:
+        var: file_content.stdout
+      
