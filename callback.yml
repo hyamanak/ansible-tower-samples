@@ -5,5 +5,5 @@
       register: file_contents
 
     - name: show file contents
-      sdebug:
+      debug:
         var: file_contents.stdout
