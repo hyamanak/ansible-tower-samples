@@ -1,9 +1,5 @@
 - hosts: all
   tasks:
-    - name: Set JSON output callback
-      set_fact:
-        ansible_stdout_callback: json
-
     - name: Sample task
       debug:
         msg: "This is a test"
