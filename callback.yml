@@ -1,5 +1,9 @@
 - hosts: all
   tasks:
-    - name: Sample task
-      debug:
-        msg: "This is a test"
+    - name: cat random.txt
+      shell: cat random.txt
+      register: file_contents
+
+    - name: show file contents
+      sdebug:
+        var: file_contents.stdout
