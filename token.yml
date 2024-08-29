@@ -1,6 +1,6 @@
 ---
 - name: Log in to Automation Controller and perform an action using a token
-  hosts: rh92-0
+  hosts: all
   gather_facts: no
   tasks:
     - name: Use the token to access Automation Controller API
