@@ -15,4 +15,4 @@
     - name: Display the jobs response
       debug:
         var: job_response.content
-        verbosity: 2
+      when: job_response.content is defined and job_response.content | length > 0  
