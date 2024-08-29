@@ -15,3 +15,4 @@
     - name: Display the jobs response
       debug:
         var: job_response.content
+        verbosity: 2
