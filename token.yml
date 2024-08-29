@@ -14,5 +14,4 @@
 
     - name: Display the jobs response
       debug:
-        var: job_response.content
-      when: job_response.content is defined and job_response.content | length > 0  
+        msg: "{{ job_response.content }}"
