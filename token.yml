@@ -1,0 +1,17 @@
+---
+- name: Log in to Automation Controller and perform an action using a token
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Use the token to access Automation Controller API
+      uri:
+        url: "https://rh92-0/api/v2/jobs/"
+        method: GET
+        headers:
+          Authorization: "Bearer 44VGnIYJHJfp2fs5ZsBZ1yC2Uqg5xh"
+        return_content: yes
+      register: job_response
+
+    - name: Display the jobs response
+      debug:
+        var: job_response.content
