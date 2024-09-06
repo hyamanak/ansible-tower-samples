@@ -1,0 +1,6 @@
+---
+- name: Test community.general collection
+  hosts: all
+  tasks:
+    - name: Ping the target host using community.general.ping
+      community.general.ping:
