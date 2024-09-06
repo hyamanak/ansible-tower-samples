@@ -1,6 +1,8 @@
 ---
-- name: Test community.general.pip_package_info module
+- name: Test community.general pip_package_info module
   hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   tasks:
-    - name: Get information about the requests package
+    - name: Get information about installed pip packages
       community.general.pip_package_info:
