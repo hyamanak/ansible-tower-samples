@@ -1,6 +1,7 @@
 ---
-- name: Test community.general collection
+- name: Test community.general.pip_package_info module
   hosts: all
   tasks:
-    - name: Ping the target host using community.general.ping
-      community.general.ping:
+    - name: Get information about the requests package
+      community.general.pip_package_info:
+        name: requests
