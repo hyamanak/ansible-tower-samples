@@ -4,4 +4,3 @@
   tasks:
     - name: Get information about the requests package
       community.general.pip_package_info:
-        name: requests
